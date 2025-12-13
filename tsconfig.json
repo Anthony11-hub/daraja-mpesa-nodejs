@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // or a more recent ES version supported by your Node.js version
+    "target": "es2020",
+
+    // or "nodenext" for native ESM support
+    "module": "commonjs",
+
+    // output directory for compiled JavaScript files
+    "outDir": "./dist",
+
+    // root directory containing your TypeScript source files
+    "rootDir": "./src",
+
+    // enable all strict type-checking options
+    "strict": true,
+
+    // allows default imports from modules with no default export
+    "esModuleInterop": true,
+
+    // skip type checking of declaration files
+    "skipLibCheck": true,
+
+    // ensure consistent file casing
+    "forceConsistentCasingInFileNames": true,
+
+    "sourceMap": true,
+    "inlineSources": true,
+
+    // Set `sourceRoot` to  "/" to strip the build path prefix
+    // from generated source code references.
+    // This improves issue grouping in Sentry.
+    "sourceRoot": "/"
+  },
+  "include": ["src/**/*.ts"], // files to include in compilation
+  "exclude": ["node_modules"] // files to exclude from compilation
+}
